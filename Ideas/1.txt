@@ -1,0 +1,33 @@
+gameStates
+    - Menu
+        - Play
+            - GamePlay
+            - Paused
+            - GameOver
+        - LeaderBoards
+        - History
+        - Shop
+        - Help
+        - Settings
+    - ProgramOver
+
+Shop
+    - background skins
+    - snake skins
+    - sounds effect packs
+    - playtime awards
+    - score awards
+
+Settings
+    - game language
+    - full screen
+    - master volume
+    - mute sounds
+    - window opacity
+    - frame rate
+
+Play
+    - choose snake skins
+    - choose background
+    - choose grid size
+    - chose  playerInput mode
