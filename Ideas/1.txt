@@ -15,8 +15,9 @@ Shop
     - background skins
     - snake skins
     - sounds effect packs
-    - playtime awards
-    - score awards
+    - playtime awards (of all users in db)
+    - score awards (of all users in db)
+    - high score awards (of single user in db)
 
 Settings
     - game language
@@ -27,7 +28,34 @@ Settings
     - frame rate
 
 Play
+    - choose player name
+        - perhaps also show list of names already chosen
+        - case insensitive: saad = Saad = SAAD = sAaD
+        - perhaps limit to a single word only
     - choose snake skins
     - choose background
     - choose grid size
-    - chose  playerInput mode
+    - chose  playerInput mode (wasd / arrow)
+
+ProgramOver :>
+    - "alright, you asked for this..." sfx
+    - countdown 3 -> 1
+    - explosion video + sfx
+    - wait 3 secs
+    - closewindow
+
+LeaderBoards
+    - rankings (1, 2, 3 ...)
+    - player name
+    - player total score (perhaps add all individual scores of player)
+    - total games played
+    - total playtime (add durations of all individual games)
+
+History
+    - entry num
+    - timestamp
+    - player name
+    - score
+    - duration
+    (perhaps show only first 10 or 15)
+
