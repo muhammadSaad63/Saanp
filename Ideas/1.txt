@@ -1,4 +1,4 @@
-gameStates
+gameStates{
     - Menu
         - Play
             - GamePlay
@@ -10,52 +10,79 @@ gameStates
         - Help
         - Settings
     - ProgramOver
+}
 
-Shop
-    - background skins
-    - snake skins
-    - sounds effect packs
-    - playtime awards (of all users in db)
-    - score awards (of all users in db)
-    - high score awards (of single user in db)
+Menu{
+    - ideally make it 3d
+    - with text (saanp) at back
+    - buttons in front & bottom
+}
 
-Settings
-    - game language
-    - full screen
-    - master volume
-    - mute sounds
-    - window opacity
-    - frame rate
-
-Play
+Play{
     - choose player name
         - perhaps also show list of names already chosen
         - case insensitive: saad = Saad = SAAD = sAaD
         - perhaps limit to a single word only
+        - dont allow duplicates
     - choose snake skins
     - choose background
     - choose grid size
-    - chose  playerInput mode (wasd / arrow)
+    - chose  playerInput mode (WASD / Arrow)
+}
 
-ProgramOver :>
-    - "alright, you asked for this..." sfx
-    - countdown 3 -> 1
-    - explosion video + sfx
-    - wait 3 secs
-    - closewindow
-
-LeaderBoards
-    - rankings (1, 2, 3 ...)
+LeaderBoards{
+    - rankings           (1, 2, 3 ...)
     - player name
     - player total score (perhaps add all individual scores of player)
     - total games played
-    - total playtime (add durations of all individual games)
+    - total playtime     (add durations of all individual games)
+}
 
-History
+History{
     - entry num
     - timestamp
     - player name
     - score
     - duration
     (perhaps show only first 10 or 15)
+}
 
+Shop{
+    - background skins    (desert / woods / forest etc)
+    - snake skins         (cobra / rattlesnake etc)
+    - sounds effect packs (diff hiss sounds etc)
+    - playtime awards     (sum of all users in db)
+    - score awards        (sum of all users in db)
+    - high score awards   (of a single user in db)
+}
+
+Settings{
+    - game language  (eng / urdu)
+    - full screen    (enabled / disabled)
+    - master volume  (0% - 100%)
+    - mute sounds    (enabled / disabled)
+    - window opacity (0.0 - 1.0)
+    - frame rate     (23 / 40 / 63)
+}
+
+ProgramOver{        :>
+    - "alright, you asked for this..." sfx
+    - countdown 3 to 1
+    - explosion video + sfx
+    - wait 3 secs
+    - closewindow
+}
+
+Misc{
+    - add a pause button (2 vertical bars) in gamePlay/Playing & Paused
+    - add a cross button in all windows
+    - add a back button in shop, play, paused, settings, leaderboard etc
+    - add a moving snake at the borders in all windows
+        - when clicked/hovered, play a hiss sound
+        - generate random apples/fruits around the border, which when eaten change smthing of the snake (colour etc)
+}
+
+
+---
+
+(2 March, 2026)
